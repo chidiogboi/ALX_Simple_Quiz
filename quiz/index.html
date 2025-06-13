@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Quiz</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <p id="quiz-question">What is 2 + 2?</p>
+        <div>
+            <input type="radio" id="choice1" name="quiz" value="4">
+            <label for="choice1">4</label><br>
+            <input type="radio" id="choice2" name="quiz" value="22">
+            <label for="choice2">22</label><br>
+            <input type="radio" id="choice3" name="quiz" value="3">
+            <label for="choice3">3</label>
+        </div>
+        <button id="submit-answer">Submit Answer</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
+CSS Code
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#quiz-question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#submit-answer {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-answer:hover {
+    background-color: #0056b3;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}
